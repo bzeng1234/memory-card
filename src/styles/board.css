@@ -1,0 +1,23 @@
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-height: 800px;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 5px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover {
+    cursor: pointer;
+    background-color: #e5e5e5;
+}
