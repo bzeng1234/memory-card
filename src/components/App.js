@@ -4,48 +4,7 @@ import '../styles/app.css'
 import Board from './Board';
 
 function App() {
-  let initCardStruct = [
-    {
-      id: 1,
-      clickCount: 0
-    },
-    {
-      id: 2,
-      clickCount: 0
-    },
-    {
-      id: 3,
-      clickCount: 0
-    },
-    {
-      id: 4,
-      clickCount: 0
-    },
-    {
-      id: 5,
-      clickCount: 0
-    },
-    {
-      id: 6,
-      clickCount: 0
-    },
-    {
-      id: 7,
-      clickCount: 0
-    },
-    {
-      id: 8,
-      clickCount: 0
-    },
-    {
-      id: 9,
-      clickCount: 0
-    },
-    {
-      id: 10,
-      clickCount: 0
-    }
-  ]
+  let initCardStruct = Array(10).fill(null).map((element,index) => ({id: index, clickCount: 0}));
 
   const [cardStruct, setCardStruct] = useState(initCardStruct);
   const [currentScore, setCurrentScore] = useState(0);
